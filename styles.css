@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Roboto:wght@300;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*---NavBar---*/
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 64px;
+}
+
+img.navBar__logo {
+    width: 70px;
+    height: 36px;
+}
+
+.navBar__link {
+    display: flex;
+    align-content: space-around;
+    
+}
+
+.navBar__link li {
+    list-style-type: none;
+    margin: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 1000;
+    display: none;
+    
+}
+.navBar__link li a {
+    text-decoration: none;
+    color: inherit;
+    justify-content: space-around;
+}
+
+.navBar__button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: rgba(250, 250, 250, 0.25);
+    display: none;
+
+}
+
+.navBar__button__hamburger{
+    background: rgba(250, 250, 250, 0.25);
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar__Bar {
+    width: 18px;
+    height: 2px;
+    background-color: #fff;;
+    margin: 1px 0;
+}
+
+
+@media (width >= 1024px) {
+
+    .navBar__link {
+        display: flex;
+        align-content: space-around;  
+    }
+
+    .navBar__link li {
+        display: contents;
+        list-style-type: none;
+        margin: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 1000;
+    }
+}
+
+/*---NavBar---*/
+
+/*---BackgroundGradient---*/
+main canvas.gradient__canvas {
+    position: absolute;
+    width: 150%;
+    height: 600px;
+    top: -420px;
+    left: -100px;
+    z-index: -1;
+    transform: rotate(-10deg);
+    background-image: linear-gradient(-45deg,var(--gradient-color-1),var(--gradient-color-2),var(--gradient-color-3),var(--gradient-color-4));
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-out infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 100%; /* Starting position of the gradient (diagonal lower limit) */
+    }
+    100% {
+      background-position: 100% 100%; /* Ending position of the gradient (diagonal lower limit) */
+    }
+  }
+
+  :root {
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #ffba27;
+  }
+/*---BackgroundGradient---*/
+
+
+
+/*---Section-1---*/
+
+/*First card*/
+
+h1{
+    font-size: 58px;
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 65px;
+    overflow-y: hidden;
+}
+
+.section-1__card-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.section-1__card-1 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.section-1__card-1 img {
+    display: none;
+}
+
+.section-1__card-1__buttons {
+    display: flex;
+    margin: 16px 0;
+}
+
+.section-1__card-1__button1 {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: #0a2540;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.section-1__card-1__button1__arrow {
+    height: 24px;
+    width: 24px;    
+}
+
+.section-1__card-1__button2 {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: #7000ff;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: white;
+    align-items: center;
+}
+
+/*Partners cards*/
+
+.section-1__card-2 {
+    display: flex;
+    margin: 64px 0 8px 0;
+}
+
+
+
+.section-1__card-2__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 32px;
+
+}
+
+
+.section-1__card-2__grid img {
+    width: 100%;
+    height: auto;
+}
+
+/*---Section-1---*/
+
+/*--- Sextion-2 ---*/
+.section-2 {
+    background: #f7f9fc;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1; /*Ask about this. Why is it that section 2 is on top of section 3. Is it related to sections positions???*/
+    padding: 0 16px;
+}
+
+.section-2__container1 {
+    display: block;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.subtitle__unified p {
+    font-size: 17px;
+    color: #6962f7;
+    font-family: 'Anek Telugu', sans-serif;
+    margin: 16px 0;
+}
+
+.section-2 h2 {
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 34px;
+    color: #000000;
+    margin: 0 0 16px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.content-paragraphs {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.content-paragraphs p {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 16px 0;
+    
+}
+
+.content-paragraphs a{
+    color: #6962f7;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+
+.content-paragraphs__1 {
+    padding: 0 16px 0 0;
+    align-items: start;
+}
+
+.content-paragraphs__2 {
+    width: 100%;
+    padding: 0;
+}
+
+
+.section-2__button {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: #6962f7;
+    align-items: center;
+    margin: 16px 0;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+}
+
+.section-2__container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-2__container2__grid {
+    display: block;
+    width: 100%;
+}
+
+.section-2__container2__graphic-grid{
+    display: grid;
+    grid-template-areas: 
+    "card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+    row-gap: 32px;
+    column-gap: 16px;
+    padding: 32px 0;
+    
+}
+
+.card{
+    grid-area: card;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.slack {
+    grid-area: slack;
+}
+
+.dash {
+    grid-area: dash;
+}
+
+.section-2__container2__graphic-grid img{
+    
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Section-3 */
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 32px 16px;
+    background: #f7f9fc;
+    
+}
+
+.section-3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a2540;
+    background-size: cover; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+    transform: skewY(-10deg);
+    z-index: 1;
+    overflow-x: hidden;
+    top: -32px;
+
+}
+
+.section-3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a2540;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+    transform: skewY(-20deg);
+    z-index: 1;
+}
+
+.diagonal-background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin-top: 32px;
+}
+
+
+.section-3__container {
+    width: 100%;
+    padding: 0 16px 0 0;
+    align-items: flex-start;
+}
+
+.section-3__container__first-element {
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.subtitle__design-engineers {
+    color: #00d4ff;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px ;
+    margin: 16px 0;
+}
+
+.section-3__container__first-element h2 {
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.section-3__container__first-element__text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 16px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.section-3__button {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: #0a2540;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: #00d4ff;
+    align-items: center;
+    margin: 32px 0;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+}
+
+.section-3__container__cards {
+    margin: 32px 0;
+}
+
+.section-3__container__card-1{
+    padding: 8px 16px 8px 0;
+}
+
+.section-3__container__cards img {
+    height: 50px;
+    margin: 0 0 8px 0;
+}
+
+.section-3__container__cards h3 {
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.section-3__container__cards p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #adbdcc;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.section-3__container__cards button {
+    background-color: transparent;
+    color: #00d4ff;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: all 0.15s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3__container__card-2 {
+    padding: 8px 16px 8px 0;
+}
+
+/* Section-3 */
+
+/* Section-4 */
+
+.section-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0 16px 0;
+    z-index: 2;
+}
+
+.section-4__container {
+    padding: 0 16px;
+    display: block;
+}
+
+.section-4__container__subtitle{
+    color: #6962f7;
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.section-4__container h2 {
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0;
+    width: 100%;
+}
+
+.section-4__container__card__container {
+    margin: 32px 0;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.section-4__container__cards {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section-4__container__cards img {
+    height: 35px;
+    margin: 0 0 8px 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.section-4__container__cards h3 {
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+}
+
+.section-4__container__cards p {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+/* Section-4 */
+
+
+
