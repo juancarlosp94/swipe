@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Roboto:wght@300;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    
+}
+
+
+/*---NavBar---*/
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 64px;
+}
+
+img.navBar__logo {
+    width: 70px;
+    height: 36px;
+}
+
+.navBar__link {
+    display: flex;
+    align-content: space-around;
+    
+}
+
+.navBar__link li {
+    list-style-type: none;
+    margin: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 1000;
+    display: none;
+    
+}
+.navBar__link li a {
+    text-decoration: none;
+    color: inherit;
+    justify-content: space-around;
+}
+
+.navBar__button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: rgba(250, 250, 250, 0.25);
+    display: none;
+
+}
+
+.navBar__button__hamburger{
+    background: rgba(250, 250, 250, 0.25);
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar__Bar {
+    width: 18px;
+    height: 2px;
+    background-color: #fff;;
+    margin: 1px 0;
+}
+
+
+@media (width >= 1024px) {
+
+    .navBar__link {
+        display: flex;
+        align-content: space-around;  
+    }
+
+    .navBar__link li {
+        display: contents;
+        list-style-type: none;
+        margin: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 1000;
+    }
+}
+
+/*---NavBar---*/
+
+/*---BackgroundGradient---*/
+main canvas.gradient__canvas {
+    position: absolute;
+    width: 150%;
+    height: 600px;
+    top: -420px;
+    left: -100px;
+    z-index: -1;
+    transform: rotate(-10deg);
+    background-image: linear-gradient(-45deg,var(--gradient-color-1),var(--gradient-color-2),var(--gradient-color-3),var(--gradient-color-4));
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-out infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 100%; /* Starting position of the gradient (diagonal lower limit) */
+    }
+    100% {
+      background-position: 100% 100%; /* Ending position of the gradient (diagonal lower limit) */
+    }
+  }
+
+  :root {
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #ffba27;
+  }
+/*---BackgroundGradient---*/
+
+/*---Section-1---*/
+
+/*First card*/
+h1{
+    font-size: 58px;
+    font-family: 'Anek Telugu', sans-serif;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 65px;
+}
+
+.section-1__card-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-1__card-1 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+}
+
+.section-1__card-1 img {
+    display: none;
+}
+
+.section-1__card-1__buttons {
+    display: flex;
+}
+
+.section-1__card-1__button1 {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: #0a2540;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.section-1__card-1__button1__arrow {
+    height: 24px;
+    width: 24px;    
+}
+
+.section-1__card-1__button2 {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: #7000ff;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: white;
+    align-items: center;
+}
+
+/*Partners cards*/
+
+.section-1__card-2 {
+    display: flex;
+    margin: 64px 0 8px 0;
+}
+
+
+
+.section-1__card-2__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 32px;
+}
+
+
+.section-1__card-2__grid img {
+    width: 100%;
+    height: auto;
+}
+
+/*---Section-1---*/
+
+/*--- Sextion-2 ---*/
+.section-2 {
+    background-color: #f7f9fc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-2__container1 {
+    display: block;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.subtitle__unified p {
+    font-size: 17px;
+    color: #6962f7;
+    font-family: 'Anek Telugu', sans-serif;
+    margin: 16px 0;
+}
+
+.section-2 h2 {
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 34px;
+    color: #000000;
+    margin: 0 0 16px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.content-paragraphs {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.content-paragraphs p {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 16px 0;
+    
+}
+
+.content-paragraphs a{
+    color: #6962f7;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+
+.content-paragraphs__1 {
+    padding: 0 16px 0 0;
+    align-items: start;
+}
+
+.content-paragraphs__2 {
+    width: 100%;
+    padding: 0;
+}
+
+
+.section-2__button {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: #6962f7;
+    align-items: center;
+    margin: 16px 0;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+}
+
+.section-2__container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-2__container2__grid {
+    display: block;
+    width: 100%;
+}
+
+.section-2__container2__graphic-grid{
+    display: grid;
+    grid-template-areas: 
+    "card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+    row-gap: 32px;
+    column-gap: 16px;
+    padding: 32px 0;
+}
+
+.card{
+    grid-area: card;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.slack {
+    grid-area: slack;
+}
+
+.dash {
+    grid-area: dash;
+}
+
+.section-2__container2__graphic-grid img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+
