@@ -4,7 +4,9 @@
 
 * {
     box-sizing: border-box;
-    
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -127,27 +129,32 @@ main canvas.gradient__canvas {
   }
 /*---BackgroundGradient---*/
 
+
+
 /*---Section-1---*/
 
 /*First card*/
+
 h1{
     font-size: 58px;
     font-family: 'Anek Telugu', sans-serif;
     letter-spacing: -1px;
     margin: 0;
     line-height: 65px;
+    overflow-y: hidden;
 }
 
 .section-1__card-1 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0 16px;
 }
 
 .section-1__card-1 p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-
+    margin: 16px 0;
 }
 
 .section-1__card-1 img {
@@ -156,6 +163,7 @@ h1{
 
 .section-1__card-1__buttons {
     display: flex;
+    margin: 16px 0;
 }
 
 .section-1__card-1__button1 {
@@ -210,6 +218,7 @@ h1{
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
     row-gap: 32px;
+
 }
 
 
@@ -222,11 +231,14 @@ h1{
 
 /*--- Sextion-2 ---*/
 .section-2 {
-    background-color: #f7f9fc;
+    background: #f7f9fc;
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: -1; /*Ask about this. Why is it that section 2 is on top of section 3. Is it related to sections positions???*/
+    padding: 0 16px;
 }
 
 .section-2__container1 {
@@ -326,6 +338,7 @@ h1{
     row-gap: 32px;
     column-gap: 16px;
     padding: 32px 0;
+    
 }
 
 .card{
@@ -345,11 +358,176 @@ h1{
 }
 
 .section-2__container2__graphic-grid img{
-    object-fit: contain;
+    
     width: 100%;
     border-radius: 20px;
 }
 
+/* Section-3 */
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 32px 16px;
+    background: #f7f9fc;
+    
+}
+
+.section-3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a2540;
+    background-size: cover; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+    transform: skewY(-10deg);
+    z-index: 1;
+    overflow-x: hidden;
+    top: -32px;
+
+}
+
+.section-3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a2540;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+    transform: skewY(-20deg);
+    z-index: 1;
+}
+
+.diagonal-background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin-top: 32px;
+}
+
+
+.section-3__container {
+    width: 100%;
+    padding: 0 16px 0 0;
+    align-items: flex-start;
+}
+
+.section-3__container__first-element {
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.subtitle__design-engineers {
+    color: #00d4ff;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px ;
+    margin: 16px 0;
+}
+
+.section-3__container__first-element h2 {
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.section-3__container__first-element__text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 16px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.section-3__button {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: #0a2540;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: #00d4ff;
+    align-items: center;
+    margin: 32px 0;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+}
+
+.section-3__container__cards {
+    margin: 32px 0;
+}
+
+.section-3__container__card-1{
+    padding: 8px 16px 8px 0;
+}
+
+.section-3__container__cards img {
+    height: 50px;
+    margin: 0 0 8px 0;
+}
+
+.section-3__container__cards h3 {
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.section-3__container__cards p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #adbdcc;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.section-3__container__cards button {
+    background-color: transparent;
+    color: #00d4ff;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: all 0.15s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3__container__card-2 {
+    padding: 8px 16px 8px 0;
+}
+
+
+
+
+
+
+
+/* Section-3 */
 
 
 
