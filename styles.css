@@ -593,5 +593,224 @@ h1{
 
 /* Section-4 */
 
+/* Section-5 */
+
+.section-5 {
+    padding: 64px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+.section-5__container {
+    padding: 0 16px;
+    display: block;
+}
+
+.section-5__container::before {
+    content: "";
+    width: 100%;
+    height: 900px;
+    background-color: #0a2540;;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+
+.section-5__container__two-column{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-5__container__first-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.section-5__container__first-column__subtitle {
+    color: #00d4ff;
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.section-5__container__first-column__text {
+    color: #fff;
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.section-5__container__first-column h2 {
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0;
+    width: 100%;
+}
+
+.section-5__container__first-column p a {
+    color: #00d4ff;
+    font-weight: 500;
+    transition: color 0.25s ease;
+    text-decoration: none;
+}
+
+.section-5__container__second-column {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#globe {
+    opacity: 10%;
+    max-width: 844px;
+    position: absolute;
+    top: 10%;
+}
+
+.section-5__container__cards {
+    margin: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-5__container__card {
+    margin: 8px 0;
+}
+
+.section-5__container__card h3 {
+    border-left: 2px solid #00d4ff;
+    padding: 0 0 0 8px;
+    line-height: 28px;
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+}    
+
+.section-5__container__card p {
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #adbdcc;
+    letter-spacing: 0.25px;
+
+}
+/* Section-5 */
+
+/* Section-6 */
+
+.section-6 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section-6::before {
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.section-6__container {
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.two-column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.section-6__container__first-column {
+    padding: 0 64px 0 0;
+    height: 446px;
+}
+
+.section-6__container__first-column__subtitle {
+    font-size: 17px;
+    font-family: "Anek Telugu", sans-serif;
+    line-height: 26px;
+    font-weight: 500;
+    margin: 16px 0;
+    color: #6962f7;
+    display: block;
+}
+
+.section-6__container__first-column h2 {
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0;
+    width: 100%;
+    display: block;
+}
+
+.section-6__container__first-column__text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 16px 0;
+    display: block;
+}
+
+.section-6__container__first-column__button{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    height: fit-content;
+    border: none;
+    background: #6962f7;
+    align-items: center;
+    margin: 32px 0 0 0;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    transition: all 0.15s ease;
+}
+
+.section-6__container__second-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.section-6__container__second-column__card {
+    margin: 32px 0;
+    width: 100%;
+    height: 446px;
+    box-shadow: var(--standard-box-shadow);
+    border-radius: var(--standard-border-radius);
+    overflow: hidden;
+}
+/* Section-6 */
+
 
 
