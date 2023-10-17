@@ -896,7 +896,7 @@ h1{
 
 .section-7__container {
     flex-direction: column;
-    align-items: center;
+    
     padding: 0 16px;
 }
 
@@ -933,7 +933,22 @@ h1{
 }
 
 .column-right.card h3 {
-    
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    margin: 0px;
+}
+
+.column-right .card p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #adbdcc;;
+    letter-spacing: 0.25px;
 }
 
 #icon {
@@ -941,6 +956,9 @@ h1{
     margin: 0 0 8px 0;
 }
 
+.column-right .secondary-button {
+    padding: 8px 0;
+}
 
 /* Section-7 */
 
