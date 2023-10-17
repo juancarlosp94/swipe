@@ -189,7 +189,7 @@ h1{
     width: 24px;    
 }
 
-.section-1__card-1__button2 {
+.secondary-button {
     display: flex;
     font-family: 'Roboto', sans-serif;
     color: #7000ff;
@@ -806,11 +806,143 @@ h1{
     margin: 32px 0;
     width: 100%;
     height: 446px;
-    box-shadow: var(--standard-box-shadow);
-    border-radius: var(--standard-border-radius);
+    box-shadow: 0 2px 40px rgb(0, 0, 0,0.15);
+    border-radius: 20px;
     overflow: hidden;
 }
+
+.section-6__second-column__card-top {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-6__second-column__card-top::before {
+    content: "";
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    top: -40%;
+    transform: skewY(-5deg);
+    z-index: 1;
+    background: linear-gradient( 101.33deg, #08209a 0.76%, #6563ff 33.33%, #36c5f0 76.92%, #83e2ff 96.96% );
+}
+
+#sessions-logo {
+    z-index: 2;
+    width: 300px;
+}
+
+#sessions-logo img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.avatars {
+    position: absolute;
+    bottom: -70px;
+    left: 64px;
+    z-index: 3;
+    display: block;
+}
+
+.avatars img {
+    width: 80px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.avatars-img2 {
+    position: absolute;
+    left: 55px;
+}
+
+.section-6__second-column__card-bottom {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 64px;
+}
+
+.section-6__second-column__card-bottom__content {
+    display: block;
+}
+
+.section-6__second-column__card-bottom__content .subtitle {
+    color: #6962f7;
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: var(--subtitle-size);
+    line-height: var(--subtitle-height);
+}
+
+.section-6__second-column__card-bottom__content .secondary-text {
+    color: #000;
+    font-weight: 700;
+}
+
 /* Section-6 */
+
+/* Section-7 */
+
+.section-7 {
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section-7__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.column-left h2{
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0px;
+}
+
+.column-left p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 16px 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.column-left a {
+    text-decoration: none;
+    color: #6962f7;
+    font-weight: 500;
+    transition: color 0.25s ease 0s;
+}
+
+.column-right.card {
+    margin: 16px 0;
+    align-items: start;
+    padding: 0;
+}
+
+.column-right.card h3 {
+    
+}
+
+#icon {
+    height: 50px;
+    margin: 0 0 8px 0;
+}
+
+
+/* Section-7 */
 
 
 
