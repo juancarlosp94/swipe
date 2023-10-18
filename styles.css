@@ -962,5 +962,63 @@ h1{
 
 /* Section-7 */
 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f9fc;
+    padding: 64px 0;
+}
+
+.footer-container {
+    display: flex;
+    padding: 0 16px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 50%;
+    margin: 16px 0;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-col li {
+    margin: 16px 0;
+    display: list-item;
+    font-size: 12px;
+}
+.footer-col-swipe {
+    width: 70px;
+    margin: 0 0 16px 0;
+}
+
+.footer-col__icon-link {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.footer-col__icon-link img{
+    width: 18px;
+}
+
+.footer-col__icon-link a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+
+
+/* Footer */
+
 
 
